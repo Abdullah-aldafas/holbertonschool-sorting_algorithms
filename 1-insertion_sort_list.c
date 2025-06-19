@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "sort."
+#include "sort.h"
 
 /**
  * swap_nodes - Swap two nodes in a doubly linked list
