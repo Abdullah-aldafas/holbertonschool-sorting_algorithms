@@ -3,7 +3,7 @@
 #include "sort.h"
 
 /**
- * bubble_sort - Sorts an array of integers using Bubble Sort  n
+ * bubble_sort - Sorts an array of integers using Bubble Sor
  * @array: Pointer to the array
  * @size: Number of elements in the array
  * Prints the array after each swap
