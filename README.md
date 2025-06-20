@@ -22,7 +22,7 @@ Each function prints the array after every swap operation to help visualize the 
 
 | Name             | Role                          |
 |------------------|-------------------------------|
-| sarunh10         | Bubble Sort & Insertion Sort  |
+| Sara Ali Mareer  | Bubble Sort & Insertion Sort  |
 | Abdullah Aldafas | Selection Sort & Quick Sort   |
 
 ---
