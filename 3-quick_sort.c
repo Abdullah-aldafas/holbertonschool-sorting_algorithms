@@ -2,22 +2,9 @@
 #include <stdlib.h>
 #include "sort.h"
 
-/**
- * quick_sort - Sorts an array using Quick sort algorithm
- * @array: Pointer to the array
- * @size: Size of the array
- *
- * Return: Nothing
- */
-
-void quick_sort(int *array, size_t size)
-{
-	if (array == NULL || size < 2)
-		return;
-
-	quick_sort_recursive(array, 0, size - 1, size);
-
-}
+void quick_sort(int *array, size_t size);
+void quick_sort_recursive(int *array, int low, int high, size_t size);
+int partition(int *array, int low, int high, size_t size);
 
 /**
  * quick_sort_recursive - Recursively sorts sub-arrays
@@ -55,9 +42,10 @@ int partition(int *array, int low, int high, size_t size)
 {
 	int pivot = array[high];
 	int i = low - 1;
+	int j;
 	int temp;
-
-	for (int j = low; j < high; j++)
+	
+	for (j = low; j < high; j++)
 	{
 		if (array[j] <= pivot)
 		{
@@ -79,4 +67,21 @@ int partition(int *array, int low, int high, size_t size)
 		print_array(array, size);
 
 	return (i + 1);
+}
+
+/**
+ * quick_sort - Sorts an array using Quick sort algorithm
+ * @array: Pointer to the array
+ * @size: Size of the array
+ *
+ * Return: Nothing
+ */
+
+void quick_sort(int *array, size_t size)
+{
+	if (array == NULL || size < 2)
+		return;
+
+	quick_sort_recursive(array, 0, size - 1, size);
+
 }
